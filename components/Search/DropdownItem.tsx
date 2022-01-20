@@ -3,7 +3,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import { FONTS } from "../../constants";
 import DropdownItemStyles from "./styles/DropdownItemStyles";
-const DropdownItem = (props: any) => {
+const DropdownItem = (props: any): JSX.Element => {
   return (
     <View style={DropdownItemStyles.container}>
       <Text style={DropdownItemStyles.title}>{props.title}</Text>

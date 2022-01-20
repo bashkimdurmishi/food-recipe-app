@@ -3,7 +3,7 @@ import { View, Text, Image } from "react-native";
 import loadIngredientImage from "../../services/loadIngredientImage";
 import IngredientStyles from "./styles/IngredientStyles";
 
-const Ingredient = (props: any) => {
+const Ingredient = (props: any): JSX.Element => {
   const item = props.item;
   return (
     <View style={IngredientStyles.container}>

@@ -6,8 +6,9 @@ import { icons } from "../constants";
 import { TabIcon } from "../components/UI";
 import Search from "../screens/BottomStack/Search";
 import Settings from "../screens/BottomStack/Settings";
+import { MainStackParamList } from "../Types";
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<MainStackParamList>();
 
 const Tabs = () => {
   return (

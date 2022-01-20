@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 import { COLORS, SIZES, icons, FONTS } from "../../constants";
 import RecipeInfoStyles from "./styles/RecipeInfoStyles";
 import Viewers from "./Viewers";
-const RecipeInfo = (props: any) => {
+const RecipeInfo = (props: any): JSX.Element => {
   return (
     <View style={RecipeInfoStyles.container}>
       {/* Recipe */}

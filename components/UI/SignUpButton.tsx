@@ -4,7 +4,7 @@ import { COLORS, SIZES } from "../../constants";
 import CustomButton from "./CustomButton";
 import SignUpButtonStyles from "./styles/SignUpButtonStyles";
 
-const SignUpButton = (props: any) => {
+const SignUpButton = (props: any): JSX.Element => {
   return (
     <CustomButton
       buttonText="Sign Up"

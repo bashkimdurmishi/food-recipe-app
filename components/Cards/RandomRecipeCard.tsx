@@ -12,7 +12,7 @@ const RandomRecipeCard = ({
   containerStyle,
   categoryItem,
   onPress,
-}: IRandomRecipeCard) => {
+}: IRandomRecipeCard): JSX.Element => {
   const path = "../../assets/images/recipes";
   return (
     <TouchableOpacity

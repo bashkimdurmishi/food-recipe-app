@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Animated } from "react-native";
+import { Animated, View } from "react-native";
 import { RecipeCreatorCardInfo } from "./index";
 import RecipeCardHeaderStyles from "./styles/RecipeCardHeaderStyles";
 
-const RecipeCardHeader = (props: any) => {
+const RecipeCardHeader = (props: any): JSX.Element => {
   const { HEADER_HEIGHT, scrollY, selectedRecipe } = props;
   return (
     <View style={RecipeCardHeaderStyles.container}>

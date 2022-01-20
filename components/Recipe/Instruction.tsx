@@ -1,10 +1,9 @@
 import React from "react";
-import { View, Text } from "react-native";
-import { COLORS, FONTS, SIZES } from "../../constants";
-import Ingredient from "./Ingredient";
+import {Text, View} from "react-native";
+import {COLORS, SIZES} from "../../constants";
 import InstructionStyles from "./styles/InstructionStyles";
 
-const Instruction = (props: any) => {
+const Instruction = (props: any): JSX.Element => {
   return (
     <View>
       <View

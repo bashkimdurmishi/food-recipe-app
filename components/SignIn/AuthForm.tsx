@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import {
-  View,
-  Text,
-  TextInput,
   KeyboardAvoidingView,
   StyleSheet,
+  Text,
+  TextInput,
   TouchableOpacity,
+  View,
 } from "react-native";
-import { COLORS, SIZES, FONTS } from "../../constants";
+import { COLORS, FONTS, SIZES } from "../../constants";
 import { LoginButton, SignUpButton } from "../UI";
 import { auth } from "../../firebase/firebase";
 
 import { signInAsync, signUpAsync } from "../../redux/user/thunk";
 import { connect } from "react-redux";
 
-const AuthForm = (props: any) => {
-  const [isSignedIn, setIsSignedIn] = useState(false);
+const AuthForm = (props: any): JSX.Element => {
   const [email, setEmail] = useState("bashkim1234@yahoo.com");
   const [password, setPassword] = useState("bachi123B");
   const [firstName, setFirstName] = useState("");
@@ -59,14 +58,14 @@ const AuthForm = (props: any) => {
             placeholderTextColor={COLORS.black}
             placeholder="First Name"
             onChangeText={(text) => setFirstName(text)}
-          ></TextInput>
+          />
           <TextInput
             style={styles.firstAndLastName}
             value={lastName}
             placeholderTextColor={COLORS.black}
             placeholder="Last Name"
             onChangeText={(text) => setLastName(text)}
-          ></TextInput>
+          />
         </View>
       )}
       {/* Email and Password */}
@@ -77,7 +76,7 @@ const AuthForm = (props: any) => {
           placeholderTextColor={COLORS.black}
           placeholder="E-mail..."
           onChangeText={(text) => setEmail(text)}
-        ></TextInput>
+        />
 
         <TextInput
           style={styles.input}
@@ -89,7 +88,7 @@ const AuthForm = (props: any) => {
             setPassword(text);
             console.log(password);
           }}
-        ></TextInput>
+        />
       </View>
       {/* Login Button */}
       {props.signIn ? (

@@ -16,7 +16,7 @@ const CustomButton = ({
   buttonContainerStyle,
   colors,
   onPress,
-}: Props) => {
+}: Props): JSX.Element => {
   if (colors.length > 0) {
     return (
       <TouchableOpacity onPress={onPress}>

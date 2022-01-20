@@ -7,7 +7,7 @@ interface Viewers {
   viewersList: any;
 }
 
-const Viewers = ({ viewersList }: Viewers) => {
+const Viewers = ({ viewersList }: Viewers): JSX.Element => {
   return (
     <View>
       {/* Profile */}

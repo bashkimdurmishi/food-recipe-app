@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import SearchHeaderStyles from "./styles/SearchHeaderStyles";
 
-const HomeHeader = () => {
+const HomeHeader = (): JSX.Element => {
   return (
     <View style={SearchHeaderStyles.container}>
       {/* Text */}

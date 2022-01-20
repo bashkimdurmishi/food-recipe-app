@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Image } from "react-native";
 import { icons } from "../../constants";
 import DropDownWithArrowCardStyles from "./styles/DropDownWithArrowCardStyles";
 
-const DropDownWithArrowCard = (props: any) => {
+const DropDownWithArrowCard = (props: any): JSX.Element => {
   const [showDetails, setShowDetails] = useState(false);
   const arrowIconRotation = showDetails ? "90deg" : "0deg";
   return (

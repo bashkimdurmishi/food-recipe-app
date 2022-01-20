@@ -8,7 +8,7 @@ interface ILogoutButton {
   onPress: () => void;
 }
 
-const LogoutButton = (props: ILogoutButton) => {
+const LogoutButton = (props: ILogoutButton): JSX.Element => {
   return (
     <TouchableOpacity
       style={{

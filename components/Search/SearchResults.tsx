@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { TrendingCard } from "../Home";
 import SearchResultsStyles from "./styles/SearchResultsStyles";
 
-const SearchResults = (props: any) => {
+const SearchResults = (props: any): JSX.Element => {
   return (
     <View style={SearchResultsStyles.container}>
       {/* Search Result Text */}

@@ -9,7 +9,7 @@ interface IAuthDetails {
   navigation: StackNavigationProp<MainNavigatorParamsList, "Welcome">;
 }
 
-const AuthDetails = ({ navigation }: IAuthDetails) => {
+const AuthDetails = ({ navigation }: IAuthDetails): JSX.Element => {
   return (
     <View style={LoginDetailsStyles.container}>
       {/* Description */}

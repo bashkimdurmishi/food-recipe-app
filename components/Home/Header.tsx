@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { connect } from "react-redux";
 import ProfilePictureCircle from "../UI/ProfilePictureCircle";
 import HeaderStyles from "./styles/HeaderStyles";
-const Header = (props: any) => {
+const Header = (props: any): JSX.Element => {
   return (
     <View style={HeaderStyles.container}>
       {/* Text */}

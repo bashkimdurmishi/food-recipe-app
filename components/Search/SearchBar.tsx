@@ -3,7 +3,7 @@ import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
 import { SIZES, COLORS, icons, FONTS } from "../../constants";
 import SearchBarStyles from "./styles/SearchBarStyles";
 
-const SearchBar = (props: any) => {
+const SearchBar = (props: any): JSX.Element => {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <View style={SearchBarStyles.container}>

@@ -8,7 +8,7 @@ interface RecipeCardInfo {
   recipeItem: any;
 }
 
-const RecipeCardInfo = ({ recipeItem }: RecipeCardInfo) => {
+const RecipeCardInfo = ({ recipeItem }: RecipeCardInfo): JSX.Element => {
   if (Platform.OS === "ios") {
     return (
       <BlurView tint="dark" style={RecipeCardDetailsStyles.container}>

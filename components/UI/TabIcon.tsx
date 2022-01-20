@@ -8,7 +8,7 @@ interface Icon {
   icon: any;
 }
 
-const TabIcon = ({ focused, icon }: Icon) => {
+const TabIcon = ({ focused, icon }: Icon): JSX.Element => {
   return (
     <View style={TabIconStyles.container}>
       <Image

@@ -1,39 +1,25 @@
 import { LinearGradient } from "expo-linear-gradient";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import * as ImagePicker from "expo-image-picker";
 import {
-  View,
-  Text,
-  ImageBackground,
   Image,
+  ImageBackground,
+  Text,
   TouchableOpacity,
-  StyleSheet,
-  Platform,
+  View,
 } from "react-native";
 import { connect } from "react-redux";
-import { images, icons, COLORS, SIZES, FONTS } from "../../constants";
+import { COLORS, icons, images } from "../../constants";
 import {
-  uploadProfileImageAsync,
   logoutUserAsync,
+  uploadProfileImageAsync,
 } from "../../redux/user/thunk";
 import ProfilePictureCircle from "../UI/ProfilePictureCircle";
 import LogoutButton from "../UI/LogoutButton";
 import HeaderStyles from "./styles/HeaderStyles";
 
-const Header = (props: any) => {
+const Header = (props: any): JSX.Element => {
   const [showMenu, setShowMenu] = useState(false);
-
-  useEffect(() => {
-    async () => {
-      if (Platform.OS !== "web") {
-        const { status } =
-          await ImagePicker.requestMediaLibraryPermissionsAsync();
-        if (status !== "granted") {
-          alert("Sorry, we need camera permissions to update your picture!");
-        }
-      }
-    };
-  });
 
   const pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({

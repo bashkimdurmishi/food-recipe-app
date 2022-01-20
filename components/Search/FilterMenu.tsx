@@ -5,7 +5,7 @@ import DropdownItem from "./DropdownItem";
 import { getSearchResultsAsync } from "../../redux/recipes/thunk";
 import { connect } from "react-redux";
 import FilterMenuStyles from "./styles/FilterMenuStyles";
-const FilterMenu = (props: any) => {
+const FilterMenu = (props: any): JSX.Element => {
   const { filterForm, setFilterForm } = props;
   return (
     <ScrollView contentContainerStyle={FilterMenuStyles.container}>

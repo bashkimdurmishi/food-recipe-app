@@ -12,7 +12,7 @@ interface IProps {
   loading?: boolean;
 }
 
-const ProfilePictureCircle = (props: IProps) => {
+const ProfilePictureCircle = (props: IProps): JSX.Element => {
   const imageSize = props.size - props.padding;
   return (
     <View

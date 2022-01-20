@@ -19,7 +19,7 @@ export interface RecipeWithoutSteps {
   sourceName?: string;
   pricePerServing?: number;
   extendedIngredients?: ExtendedIngredient[];
-  id?: number;
+  id: number;
   title?: string;
   readyInMinutes?: number;
   servings?: number;

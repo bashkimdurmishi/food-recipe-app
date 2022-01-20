@@ -11,12 +11,13 @@ import store from "./store";
 import loadFonts from "./services/loadFonts";
 import { ActivityIndicator } from "react-native";
 import { LogBox } from "react-native";
+import { MainStackParamList } from "./Types";
 
 LogBox.ignoreLogs(["Setting a timer"]);
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<MainStackParamList>();
 
-const App = () => {
+const App = (): JSX.Element => {
   const [fontsLoaded, setFontsLoaded] = useState(false);
 
   useEffect(() => {

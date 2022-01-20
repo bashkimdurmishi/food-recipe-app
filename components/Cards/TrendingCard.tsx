@@ -6,7 +6,7 @@ interface TrendingCard {
   containerStyle: any;
   recipeItem: any;
   onPress: any;
-  trendingList: any | undefined;
+  trendingList?: any;
 }
 
 const TrendingCard = ({
@@ -14,7 +14,7 @@ const TrendingCard = ({
   recipeItem,
   onPress,
   trendingList,
-}: TrendingCard) => {
+}: TrendingCard): JSX.Element => {
   return (
     <TouchableOpacity
       style={{

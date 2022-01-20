@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-const Settings = () => {
+const Settings = (): JSX.Element => {
   return (
     <View>
       <Text></Text>

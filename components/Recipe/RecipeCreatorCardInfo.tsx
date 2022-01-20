@@ -8,7 +8,7 @@ const RecipeCardCreatorDetail = ({
   selectedRecipe,
 }: {
   selectedRecipe: any;
-}) => {
+}): JSX.Element => {
   return (
     <View style={RecipeCreatorCardInfoStyles.container}>
       {/* Profile Photo */}

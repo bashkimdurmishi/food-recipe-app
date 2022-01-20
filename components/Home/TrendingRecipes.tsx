@@ -5,7 +5,7 @@ import { SIZES } from "../../constants";
 import { TrendingCard } from "../Cards";
 import TrendingRecipesStyles from "./styles/TrendingRecipesStyles";
 
-const TrendingRecipes = (props: any) => {
+const TrendingRecipes = (props: any): JSX.Element => {
   return (
     <View style={TrendingRecipesStyles.container}>
       <Text style={TrendingRecipesStyles.title}>Trending Recipes</Text>

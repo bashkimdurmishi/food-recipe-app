@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Image } from "react-native";
 import { images } from "../../constants";
 import SeeRecipeCardStyles from "./styles/SeeRecipeCardStyles";
 
-const SeeRecipeCard = (props: any) => {
+const SeeRecipeCard = (props: any): JSX.Element => {
   return (
     <View style={SeeRecipeCardStyles.container}>
       {/* Image */}
